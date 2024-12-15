@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main container for the BOGO offer page -->
+  <div class="container">
+    <!-- Title for the BOGO offer -->
+    <h1 class="title">YAY! It’s BOGO</h1>
+
+    <!-- Form for selecting different offer options -->
+    <form class="offer-options">
+      <!-- Offer Option 1 (1 Unit) -->
+      <div class="offer-option">
+        <label>
+          <!-- Radio button for selecting this offer -->
+          <input type="radio" name="unit" value="1" checked>
+          <!-- Container for offer details -->
+          <div class="offer-details">
+            <div class="offer-header">
+              <!-- Display details of the offer -->
+              <span>1 Unit</span>
+              <span class="discount">10% Off</span>
+              <span class="current-price">$10.00 USD</span>
+            </div>
+            <div class="price">
+              <!-- Original price  -->
+              <span class="original-price">$24.00 USD</span>
+            </div>
+            <p class="description">Standard Price</p>
+          </div>
+        </label>
+      </div>
+
+      <!-- Offer Option 2 (2 Units) - Marked as "Most Popular" -->
+      <div class="offer-option popular">
+        <div class="popular-badge">MOST POPULAR</div>
+        <label>
+          <!-- Radio button for selecting this offer -->
+          <input type="radio" class="second-radio" name="unit" value="2">
+          <!-- Container for offer details -->
+          <div class="offer-details">
+            <div class="offer-header">
+              <!-- Display details of the offer -->
+              <span>2 Unit</span>
+              <span class="discount">20% Off</span>
+              <span class="current-price">$18.00 USD</span>
+            </div>
+            <div class="price">
+              <!-- Original price  -->
+              <span class="original-price">$24.00 USD</span>
+            </div>
+             <!-- Selection of Size  -->
+            <div class="size-color">
+             
+             
+              <div class="row">
+                <span>#1</span>
+                <div class="selection-group">
+                  <label>Size</label>
+                  <select>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </div>
+                <div class="selection-group">
+                  <label>Colour</label>
+                  <select>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                  </select>
+                </div>
+              </div>
+              
+              
+              <div class="row">
+                <span>#2</span>
+                <div class="selection-group">
+                  <select>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                  </select>
+                </div>
+                <div class="selection-group">
+                  <select>
+                    <option value="Colour">Colour</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Offer Option 3 (3 Units) -->
+      <div class="offer-option">
+        <label class="option3-section">
+          <!-- Radio button for selecting this offer -->
+          <input type="radio" class="unit3-input" name="unit" value="3">
+          <!-- Container for offer details -->
+          <div class="offer-details">
+            <div class="offer-header">
+              <!-- Display details of the offer -->
+              <span>3 Unit</span>
+              <span class="discount discount3">30% Off</span>
+              <span class="current-price">$24.00 USD</span>
+            </div>
+            <div class="price">
+              <!-- Original price  -->
+              <span class="original-price">$24.00 USD</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </form>
+
+    <!-- Footer Section for total price and free delivery -->
+    <div class="footer">
+      <p class="free-delivery">Free Delivery</p>
+      <!-- Display the total price based on selection -->
+      <p class="total">Total: <span id="total-price">$18.00 USD</span></p>
+    </div>
+
+    <!-- Add to Cart Button -->
+    <div class="add-to-cart">
+      <button type="button" class="add-to-cart">+ Add to Cart</button>
+    </div>
+
+    <!-- Footer with the powered-by message -->
+    <footer>
+      <p class="powered-by">@ Powered by Pumper</p>
+    </footer>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

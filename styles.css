@@ -1,0 +1,287 @@
+
+body {
+ 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  overflow-x: hidden;
+}
+.title {
+  font-size: 1.5rem;
+  color: #ff6090;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px; 
+}
+.title::before,
+.title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%; 
+  height: 1px; 
+  background-color: #ccc;
+}
+
+.title::before {
+  left: -90%; 
+}
+
+.title::after {
+  right: -90%; 
+}
+
+
+.offer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer-option {
+  border: 1px solid #ccc;
+ 
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.popular {
+  border-color: #ff6090;
+  border-width: 3px; 
+  border-style: solid; 
+}
+
+
+.popular .popular-badge {
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  background-color: #ff6090;
+  
+  color: #ffffff;
+  padding: 5px 10px;
+ 
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+label input[type="radio"] {
+  margin-top: -7%;
+}
+.second-radio{
+margin-top: -14% !important;
+}
+
+.offer-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.offer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.discount {
+  color: #ffffff;
+  background-color: #ff6090;
+  padding: 2px 6px;
+
+  font-size: 0.8rem;
+  margin-left: -59%;
+}
+
+.unit3-input{
+margin-top: -5% !important;
+}
+.option3-section{
+margin-top: 2%;
+}
+.discount3 {
+  color: #ffffff;
+  background-color: #ff6090;
+  padding: 2px 6px;
+ 
+  font-size: 0.8rem;
+  margin-left: -59%;
+  margin-top: -5%;
+}
+.price {
+  margin-top: 10px;
+}
+
+.current-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  margin-left: 83%;
+  font-size: 0.9rem;
+}
+
+
+
+
+.description {
+  color: #666666;
+  font-size: 0.9rem;
+  margin-top: -3%;
+}
+
+.size-color {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  margin-top: -3%;
+}
+
+.row {
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+}
+
+.selection-group {
+  display: flex;
+  flex-direction: column; 
+}
+
+.selection-group label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+span {
+  font-weight: light;
+  font-size: 0.8rem;
+  margin-top: 1%; 
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #aaaaaa;
+  margin-left: 70%;
+}
+
+.free-delivery {
+  color: #ff6090;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.total {
+  font-size: 1rem;
+  margin-top: 3%;
+}
+
+.add-to-cart {
+  background-color: #ff6090;
+  color: #ffffff;
+  border: none;
+  
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+/* 
+/* Mobile-specific styles */
+@media screen and (max-width: 600px) {
+
+/* Existing styles */
+.discount {
+  color: #ffffff;
+  background-color: #ff6090;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  margin-left: -29%;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  margin-left: 71%;
+  font-size: 0.9rem;
+}
+
+label input[type="radio"] {
+  margin-top: -15%;
+}
+
+.second-radio {
+  margin-top: -27% !important;
+}
+
+.unit3-input {
+  margin-top: -8% !important;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+  margin-left: 63%;
+}
+.total {
+  font-size: 1rem;
+  margin-top: 5%;
+}
+
+/*  styles for Samsung Galaxy S8+ (360px) */
+@media screen and (max-width: 360px) {
+  .original-price {
+    margin-left: 66%;
+  }
+
+  .discount {
+    margin-left: -23%;
+  }
+
+  .second-radio {
+    margin-top: -32% !important;
+  }
+
+ 
+}
+}
